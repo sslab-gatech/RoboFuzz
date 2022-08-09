@@ -1,0 +1,6 @@
+{
+    "/move_action/_action/status": "action_msgs/msg/GoalStatusArray",
+    "/joint_states": "sensor_msgs/msg/JointState",
+    "/panda_arm_controller/state": "control_msgs/msg/JointTrajectoryControllerState",
+    "/motion_plan_request": "moveit_msgs/msg/MotionPlanRequest"
+}

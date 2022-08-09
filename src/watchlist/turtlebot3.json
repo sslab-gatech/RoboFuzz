@@ -1,0 +1,6 @@
+{
+    "/cmd_vel": "geometry_msgs/msg/Twist",
+    "/imu": "sensor_msgs/msg/Imu",
+    "/odom": "nav_msgs/msg/Odometry",
+    "/scan": "sensor_msgs/msg/LaserScan"
+}

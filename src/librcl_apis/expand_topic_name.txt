@@ -1,0 +1,2 @@
+rcl_expand_topic_name
+rcl_get_default_topic_name_substitutions

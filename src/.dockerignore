@@ -1,0 +1,8 @@
+bugs/
+logs/
+*.bag
+rawdata/
+px4-coverage/
+px4-coverage-withfeedback/
+px4-coverage-withoutfeedback/
+rosbags/

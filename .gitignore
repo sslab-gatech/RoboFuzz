@@ -1,7 +1,9 @@
 *.o
-
 *.lock
 *.swp
 *.swo
+*.pyc
+.gdb_history
 
+fuzzing_keys
 __pycache__
