@@ -1,0 +1,7 @@
+*.o
+
+*.lock
+*.swp
+*.swo
+
+__pycache__
