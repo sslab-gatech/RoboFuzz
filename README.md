@@ -15,6 +15,7 @@ We tested six targets with RoboFuzz;
   2. ROS Client Library APIs (rclpy and rclcpp)
 
 * Four ROS-based robotic systems/libraries:
+
   3. Turtlesim (apt pkg: ros-foxy-turtlesim)
   4. Move It 2 + PANDA manipulator (included in moveit2_tutorials)
   5. TurtleBot3 Burger (ver. foxy)
