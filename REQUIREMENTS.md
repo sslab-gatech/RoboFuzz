@@ -28,6 +28,8 @@ your own:
 - PX4 drone - X500 kit by Holybro
   - https://shop.holybro.com/x500-kit_p1180.html
 
+For further information on the setup, please see `hybrid_fuzzing.md`.
+
 Otherwise, you can still perform tests with only the virtual models in the
 simulator, i.e., do a SITL (simulator-in-the-loop) testing. Everything for the
 SITL testing is included in the artifact.
