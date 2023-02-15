@@ -5,8 +5,10 @@ and robotic systems that are built using ROS 2. Any developer-defined
 properties relating to the correctness of the robotic system under test,
 e.g., conformance to specification, can be tested using RoboFuzz.
 
-The paper "RoboFuzz: Fuzzing Robotic Systems over Robot Operating System (ROS)
-for Finding Correctness Bugs" will be published at ESEC/FSE 2022 in November.
+For technical details,
+please check our [paper](https://squizz617.github.io/pubs/robofuzz-fse22.pdf),
+"RoboFuzz: Fuzzing Robotic Systems over Robot Operating System (ROS)
+for Finding Correctness Bugs", which was published in ESEC/FSE 2022.
 
 We tested six targets with RoboFuzz;
 
