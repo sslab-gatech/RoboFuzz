@@ -198,7 +198,7 @@ def run_rosidl_harness(lang, shmid, ros_type="empty"):
 
 
 def run_moveit_harness():
-    cmd = f"DISPLAY={os.getenv('DISPLAY')} ros2 launch moveit2_tutorials move_group.launch.py 2>&1 > /dev/null"
+    cmd = f"DISPLAY={os.getenv('DISPLAY')} ros2 launch moveit2_tutorials demo.launch.py 2>&1 > /dev/null"
 
     pgrp = sp.Popen(
         cmd,
@@ -258,18 +258,16 @@ def moveit_send_command(msg):
     z = str(msg.position.z)
     w = str(msg.orientation.w)
 
-    cmd = "ros2 launch moveit2_tutorials move_group_interface_tutorial.launch.py"
-
     sp.call(
         [
             "ros2",
-            "launch",
-            "moveit2_tutorials",
-            "move_group_interface_tutorial.launch.py",
-            f"x:={x}",
-            f"y:={y}",
-            f"z:={z}",
-            f"w:={w}",
+            "run",
+            "moveit2_harness",
+            "moveit2_harness",
+            f"{x}",
+            f"{y}",
+            f"{z}",
+            f"{w}",
         ],
         stdout=sp.DEVNULL,
         stderr=sp.DEVNULL,

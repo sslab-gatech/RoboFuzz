@@ -12,9 +12,9 @@ import mutator
 import harness
 import ros_utils
 from ros2_fuzzer import ros_commons
-import px4_utils
-from px4_prep.blacklist import blacklist as param_blacklist
-from px4_prep.blacklist import tested as param_tested
+# import px4_utils
+# from px4_prep.blacklist import blacklist as param_blacklist
+# from px4_prep.blacklist import tested as param_tested
 
 
 class Campaign(Enum):
