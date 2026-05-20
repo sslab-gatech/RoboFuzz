@@ -27,3 +27,25 @@ Test:
 source
 ros2 run moveit2_harness moveit2_harness 0.2 0.2 0.2 0.2
 ```
+
+## Instrumentation
+Build mclangwrapper of rofer-humble:
+```
+cd /home/seulbae/workspace
+git clone git@github.com:postech-compsec/rofer-humble.git
+cd rofer-humble/fuzz_manager
+ROFER_INSTRUMENT=1 ./build.sh
+cd ..
+ls mutator/build/bin | grep mclang
+```
+
+Instrument using mclangwrapper:
+```
+colcon build \
+  --mixin release \
+  --cmake-clean-cache \
+  --cmake-args \
+    -DCMAKE_C_COMPILER=/home/seulbae/workspace/rofer-humble/mutator/build/bin/mclangwrapper \
+    -DCMAKE_CXX_COMPILER=/home/seulbae/workspace/rofer-humble/mutator/build/bin/mclangwrapper++
+```
+
